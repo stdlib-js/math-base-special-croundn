@@ -139,6 +139,24 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/math/base/special/cceiln`][@stdlib/math/base/special/cceiln]: round a complex number to the nearest multiple of 10^n toward positive infinity.
+-   [`@stdlib/math/base/special/cfloorn`][@stdlib/math/base/special/cfloorn]: round a complex number to the nearest multiple of 10^n toward negative infinity.
+-   [`@stdlib/math/base/special/cround`][@stdlib/math/base/special/cround]: round a complex number to the nearest integer.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -195,6 +213,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-croundn/main/LICENSE
 
 [ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
+
+<!-- <related-links> -->
+
+[@stdlib/math/base/special/cceiln]: https://github.com/stdlib-js/math-base-special-cceiln
+
+[@stdlib/math/base/special/cfloorn]: https://github.com/stdlib-js/math-base-special-cfloorn
+
+[@stdlib/math/base/special/cround]: https://github.com/stdlib-js/math-base-special-cround
+
+<!-- </related-links> -->
 
 </section>
 
