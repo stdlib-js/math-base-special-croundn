@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/math-base-special-croundn",
+  "version": "0.0.0",
+  "description": "Round a complex number to the nearest multiple of 10^n.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-croundn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.round",
+    "round",
+    "roundn",
+    "cround",
+    "integer",
+    "nearest",
+    "value",
+    "fix",
+    "tofixed",
+    "complex",
+    "cmplx",
+    "number"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
