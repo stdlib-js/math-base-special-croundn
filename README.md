@@ -35,30 +35,14 @@ limitations under the License.
 
 > Round each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-croundn
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var croundn = require( '@stdlib/math-base-special-croundn' );
+import croundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-croundn@esm/index.mjs';
 ```
 
 #### croundn( z, n )
@@ -66,9 +50,9 @@ var croundn = require( '@stdlib/math-base-special-croundn' );
 Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex-float64' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
+import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@esm/index.mjs';
+import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@esm/index.mjs';
 
 var v = croundn( new Complex128( -3.141592653589793, 3.141592653589793 ), -2 );
 // returns <Complex128>
@@ -118,9 +102,9 @@ im = imag( v );
 -   When operating on [floating-point numbers][ieee754] in bases other than `2`, rounding to specified digits can be **inexact**. For example,
 
     ```javascript
-    var Complex128 = require( '@stdlib/complex-float64' );
-    var real = require( '@stdlib/complex-real' );
-    var imag = require( '@stdlib/complex-imag' );
+    import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
+    import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-real@esm/index.mjs';
+    import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imag@esm/index.mjs';
 
     var x = 0.2 + 0.1;
     // returns 0.30000000000000004
@@ -146,11 +130,16 @@ im = imag( v );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-base-uniform' ).factory;
-var Complex128 = require( '@stdlib/complex-float64' );
-var floor = require( '@stdlib/math-base-special-floor' );
-var croundn = require( '@stdlib/math-base-special-croundn' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
+import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
+import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
+import croundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-croundn@esm/index.mjs';
 
 var rand1 = uniform( -5.0, 0.0 );
 var rand2 = uniform( -50.0, 50.0 );
@@ -163,6 +152,10 @@ for ( i = 0; i < 100; i++ ) {
     n = floor( rand1() );
     console.log( 'croundn(%s, %s) = %s', z, n, croundn( z, n ) );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -171,115 +164,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/croundn.h"
-```
-
-#### stdlib_base_croundn( z, n )
-
-Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
-
-```c
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
-
-stdlib_complex128_t z = stdlib_complex128( -3.141592653589793, 3.141592653589793 );
-
-stdlib_complex128_t out = stdlib_base_croundn( z );
-
-double re = stdlib_real( out );
-// returns -3.14
-
-double im = stdlib_imag( out );
-// returns 3.14
-```
-
-The function accepts the following arguments:
-
--   **z**: `[in] stdlib_complex128_t` input value.
--   **n**: `[in] int32_t` integer power of 10.
-
-```c
-stdlib_complex128_t stdlib_base_croundn( const stdlib_complex128_t z, const int32_t n );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/croundn.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
-#include <stdio.h>
-
-int main( void ) {
-    const stdlib_complex128_t x[] = {
-        stdlib_complex128( 3.14, 1.5 ),
-        stdlib_complex128( -3.14, -1.5 ),
-        stdlib_complex128( 0.0, 0.0 ),
-        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
-    };
-
-    stdlib_complex128_t v;
-    stdlib_complex128_t y;
-    double re1;
-    double im1;
-    double re2;
-    double im2;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        v = x[ i ];
-        y = stdlib_base_croundn( v, -2 );
-        stdlib_reim( v, &re1, &im1 );
-        stdlib_reim( y, &re2, &im2 );
-        printf( "croundn(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -306,7 +191,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -370,11 +255,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cceiln]: https://github.com/stdlib-js/math-base-special-cceiln
+[@stdlib/math/base/special/cceiln]: https://github.com/stdlib-js/math-base-special-cceiln/tree/esm
 
-[@stdlib/math/base/special/cfloorn]: https://github.com/stdlib-js/math-base-special-cfloorn
+[@stdlib/math/base/special/cfloorn]: https://github.com/stdlib-js/math-base-special-cfloorn/tree/esm
 
-[@stdlib/math/base/special/cround]: https://github.com/stdlib-js/math-base-special-cround
+[@stdlib/math/base/special/cround]: https://github.com/stdlib-js/math-base-special-cround/tree/esm
 
 <!-- </related-links> -->
 
