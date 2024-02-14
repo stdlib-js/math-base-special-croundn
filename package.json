@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-croundn",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Round each component of a double-precision complex floating-point number to the nearest multiple of 10^n.",
   "license": "Apache-2.0",
   "author": {
@@ -40,14 +40,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float64": "^0.1.1",
-    "@stdlib/complex-imag": "^0.1.1",
-    "@stdlib/complex-real": "^0.1.1",
-    "@stdlib/complex-reim": "^0.1.1",
-    "@stdlib/math-base-napi-binary": "^0.1.0",
-    "@stdlib/math-base-special-roundn": "^0.1.0",
-    "@stdlib/types": "^0.2.0",
-    "@stdlib/utils-library-manifest": "^0.1.1"
+    "@stdlib/complex-float64": "^0.2.0",
+    "@stdlib/complex-imag": "^0.2.0",
+    "@stdlib/complex-real": "^0.2.0",
+    "@stdlib/complex-reim": "^0.2.0",
+    "@stdlib/math-base-napi-binary": "^0.2.0",
+    "@stdlib/math-base-special-roundn": "^0.2.0",
+    "@stdlib/types": "^0.3.1",
+    "@stdlib/utils-library-manifest": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/constants-float64-eps": "^0.1.1",
@@ -63,11 +63,11 @@
     "@stdlib/math-base-special-round": "^0.1.1",
     "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/random-base-uniform": "^0.1.0",
-    "@stdlib/utils-try-require": "^0.1.1",
+    "@stdlib/utils-try-require": "^0.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.1.2"
+    "@stdlib/bench-harness": "^0.2.0"
   },
   "engines": {
     "node": ">=0.10.0",
