@@ -69,8 +69,8 @@ Rounds each component of a double-precision complex floating-point number to the
 
 ```javascript
 var Complex128 = require( '@stdlib/complex-float64-ctor' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float64-real' );
+var imag = require( '@stdlib/complex-float64-imag' );
 
 var v = croundn( new Complex128( -3.141592653589793, 3.141592653589793 ), -2 );
 // returns <Complex128>
@@ -121,8 +121,8 @@ im = imag( v );
 
     ```javascript
     var Complex128 = require( '@stdlib/complex-float64-ctor' );
-    var real = require( '@stdlib/complex-real' );
-    var imag = require( '@stdlib/complex-imag' );
+    var real = require( '@stdlib/complex-float64-real' );
+    var imag = require( '@stdlib/complex-float64-imag' );
 
     var x = 0.2 + 0.1;
     // returns 0.30000000000000004
@@ -203,17 +203,17 @@ Rounds each component of a double-precision complex floating-point number to the
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
+#include "stdlib/complex/float64/real.h"
+#include "stdlib/complex/float64/imag.h"
 
 stdlib_complex128_t z = stdlib_complex128( -3.141592653589793, 3.141592653589793 );
 
 stdlib_complex128_t out = stdlib_base_croundn( z );
 
-double re = stdlib_real( out );
+double re = stdlib_complex128_real( out );
 // returns -3.14
 
-double im = stdlib_imag( out );
+double im = stdlib_complex128_imag( out );
 // returns 3.14
 ```
 
@@ -338,8 +338,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-croundn.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-special-croundn
 
-[test-image]: https://github.com/stdlib-js/math-base-special-croundn/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-base-special-croundn/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-base-special-croundn/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/math-base-special-croundn/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-croundn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-croundn?branch=main
