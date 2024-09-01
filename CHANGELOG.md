@@ -117,13 +117,11 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 ### BREAKING CHANGES
 
--   [`33b55e6`](https://github.com/stdlib-js/stdlib/commit/33b55e66e1ce8720ed5fcb9e8885fa56de010774): remove out argument support in croundn and add C implementations
--   [`33b55e6`](https://github.com/stdlib-js/stdlib/commit/33b55e66e1ce8720ed5fcb9e8885fa56de010774): remove support for `out` argument 
+-   [`33b55e6`](https://github.com/stdlib-js/stdlib/commit/33b55e66e1ce8720ed5fcb9e8885fa56de010774): remove support for `out` argument
 
     -   To migrate, users should provide a complex number object and handle a complex number object return value.
 
--   [`58832ee`](https://github.com/stdlib-js/stdlib/commit/58832eef6d93e6519622148242600eae93dca4d9): update minimum TypeScript version
--   [`58832ee`](https://github.com/stdlib-js/stdlib/commit/58832eef6d93e6519622148242600eae93dca4d9): update minimum TypeScript version to 4.1 
+-   [`58832ee`](https://github.com/stdlib-js/stdlib/commit/58832eef6d93e6519622148242600eae93dca4d9): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
