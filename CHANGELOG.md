@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-06)
+## Unreleased (2025-12-13)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`f3a591e`](https://github.com/stdlib-js/stdlib/commit/f3a591e3fcf19bdf10a7930c9d01792bd266dfba) - **docs:** improve doctests for complex number instances in `math/base/special/croundn` [(#9008)](https://github.com/stdlib-js/stdlib/pull/9008) _(by Aryan kumar)_
 -   [`2cf7f78`](https://github.com/stdlib-js/stdlib/commit/2cf7f78c164b51a905e7df83c99e0404ac55fe39) - **docs:** correct function names, return values, and method calls in TypeScript declaration examples _(by Philipp Burckhardt)_
 -   [`dd6d9cf`](https://github.com/stdlib-js/stdlib/commit/dd6d9cff0105270f0664490f3c89b36d4df89032) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
@@ -27,8 +28,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Aryan kumar
 -   Karan Anand
 -   Philipp Burckhardt
 
