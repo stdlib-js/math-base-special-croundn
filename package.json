@@ -40,14 +40,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-float64-ctor": "^0.0.3",
+    "@stdlib/complex-float64-ctor": "^0.1.0",
     "@stdlib/complex-float64-imag": "^0.1.1",
     "@stdlib/complex-float64-real": "^0.1.1",
     "@stdlib/complex-float64-reim": "^0.1.2",
-    "@stdlib/math-base-napi-binary": "^0.3.0",
+    "@stdlib/math-base-napi-binary": "^0.3.1",
     "@stdlib/math-base-special-roundn": "^0.2.2",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/constants-float64-eps": "^0.2.2",
