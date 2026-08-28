@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-27)
+## Unreleased (2026-08-28)
 
 <section class="commits">
 
@@ -12,6 +12,8 @@
 
 <details>
 
+-   [`e67a5aa`](https://github.com/stdlib-js/stdlib/commit/e67a5aad659d8f6623e4ab8ac94687a8586ea83a) - **docs:** update Markdown equation elements _(by stdlib-bot)_
+-   [`85f4853`](https://github.com/stdlib-js/stdlib/commit/85f48534ef6908bbcd982d48f1c5fbea3fb7aafd) - **docs:** update Markdown equation SVGs _(by stdlib-bot)_
 -   [`9a46793`](https://github.com/stdlib-js/stdlib/commit/9a4679369f5ad122cd1b41fba5eead58ca84faf2) - **docs:** add equations [(#14696)](https://github.com/stdlib-js/stdlib/pull/14696) _(by Karan Anand)_
 -   [`4557073`](https://github.com/stdlib-js/stdlib/commit/45570733ef0a8d98d58cc2afd808d57b662c29a8) - **test:** migrate `math/base/special/croundn` to ULP-based assertions [(#14327)](https://github.com/stdlib-js/stdlib/pull/14327) _(by Athan Reines)_
 -   [`906bab9`](https://github.com/stdlib-js/stdlib/commit/906bab98b9f33bc8c3a92e58eeafa2942990d5ab) - **docs:** propagate lint and example fixes to `math` and `stats` siblings [(#12146)](https://github.com/stdlib-js/stdlib/pull/12146) _(by Philipp Burckhardt)_
